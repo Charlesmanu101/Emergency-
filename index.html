@@ -1,0 +1,41 @@
+</header>
+<label for="emergencyType"><strong>Select Emergency Type:</strong></label>
+<select id="emergencyType">
+  <option value="medical">Medical</option>
+  <option value="fire">Fire</option>
+  <option value="crime">Crime</option>
+  <option value="disaster">Natural Disaster</option>
+</select>
+<br><br>
+
+<label for="mediaUpload"><strong>Upload Photo/Video (optional):</strong></label>
+<input type="file" id="mediaUpload" accept="image/,video/" />
+<br><br>
+  <section class="container">
+    <button id="emergencyBtn"> Report Emergency</button>
+    <p id="status"></p>
+
+    <div id="map"></div>
+
+    <div id="chatbot">
+      <h3>ANY HELP</h3>
+      <div id="chatbox">
+        <p><strong>Bot:</strong> How can I help you?</p>
+      </div>
+      <input type="text" id="userInput" placeholder="Type your question..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </section>
+<div id='emergencyBtn'>
+	<h1>
+	WE WILL REACH SOON
+	</h1>
+	<H2>
+	THANK YOU
+	</H2>
+</div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+</body>
+</html>
